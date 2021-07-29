@@ -1,0 +1,28 @@
+.matimage
+{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid black; */
+}
+.matimage img
+{
+    width: 50%;
+    height: 100%;
+    border-bottom-right-radius: 600px;
+
+}
+.text
+{
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 45px;
+}
+.text1
+{
+    font-size: 20px;
+}

@@ -1,0 +1,275 @@
+section {
+  display: flex;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(../hospital6.jpg);
+  background-size: auto;
+}
+
+.slide {
+  width: 100%;
+  opacity: 0;
+  display: none;
+}
+
+.slider .active {
+  width: 100%;
+  opacity: 1;
+}
+.textsection {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.doctor-title {
+  font-size: 3rem;
+  width: auto;
+  font-weight: bolder;
+  padding: 0rem 2rem 0rem 2rem;
+  margin-top: 2rem;
+}
+.doctor-content {
+  font-size: 1.8rem;
+  min-width: 30%;
+  max-width: 80%;
+  margin-top: 1rem;
+  padding: 0rem 2rem 0rem 2rem;
+}
+.doctor-image {
+  margin-top: 10rem;
+  width: auto;
+  height: auto;
+  display: flex;
+  float: right;
+}
+.buttons {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  margin: 1rem 2rem 2rem 0rem;
+  padding-left: 2rem;
+}
+.doctorbuttonleft,
+.doctorbuttonright {
+  width: auto;
+  box-sizing: border-box;
+  padding: 0.8rem;
+  margin-top: 0.4rem;
+  margin-right: 2rem;
+  outline: none;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: rgb(11, 81, 216);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.63rem;
+  cursor: pointer;
+}
+.doctorbuttonleft:hover,
+.doctorbuttonright:hover {
+  transform: scale(1.01);
+  background-color: rgb(0, 47, 141);
+}
+.doctor-image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  max-height: 400px;
+}
+.slider .fa-angle-left {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  font-size: 4.5rem;
+  cursor: pointer;
+  display: none;
+  color: rgb(0, 0, 0);
+  z-index: 1000;
+}
+.slider .fa-angle-right {
+  position: absolute;
+  top: 55%;
+  left: 93%;
+  font-size: 4.5rem;
+  cursor: pointer;
+  display: none;
+  color: rgb(0, 0, 0);
+}
+.slider:hover .fa-angle-left,
+.slider:hover .fa-angle-right {
+  display: flex;
+}
+
+.sliderIndicators {
+  position: absolute;
+  top: 90%;
+  left: 48%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 8.5rem;
+}
+.activeSlide {
+  background-color: rgb(22, 84, 199);
+}
+#first,
+#second,
+#third {
+  width: 80%;
+  margin-right: 0.2rem;
+  height: 0.8rem;
+  border-radius: 20%;
+  cursor: pointer;
+  border: 2px solid rgb(212, 206, 206);
+}
+.sidetoolrelative {
+  position: absolute;
+  top: 40%;
+  display: flex;
+  height: 12rem;
+  width: 3.7rem;
+}
+.sidetool {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  width: inherit;
+  background-color: rgb(42, 89, 185);
+}
+.sidetool .login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+  border-bottom: 0.2rem solid lightgray;
+}
+.sidetool .Cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+  border-bottom: 0.2rem solid lightgray;
+}
+.sidetool .feedback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+}
+.sidetool .fa-users,
+.fa-shopping-cart,
+.fa-comment-dots {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 968px) {
+  section {
+    margin-top: 110px;
+  }
+}
+@media (max-width: 690px) {
+  .doctor-image {
+    margin-top: 0rem;
+  }
+  .doctor-title {
+    font-size: 2.4rem;
+    padding-left: 1rem;
+    margin-top: 1rem;
+  }
+  .buttons {
+    width: 60%;
+    margin-bottom: 0.7rem;
+  }
+  .textsection {
+    top: 40%;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+@media (max-width: 480px) and (min-width: 309px) {
+  .slider {
+    height: 44rem;
+  }
+  .textsection {
+    top: 39%;
+    width: auto;
+    margin-right: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .doctor-title {
+    font-size: 2.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .doctor-content {
+    padding-left: 1rem;
+  }
+  .buttons {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 363px) {
+  section {
+    margin-top: 17.2rem;
+  }
+  .slider {
+    height: 32rem;
+  }
+  .doctor-image img {
+    width: 50%;
+    margin: auto;
+  }
+  .textsection {
+    top: 20%;
+    width: auto;
+    margin-left: 1.4rem;
+    margin-right: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .doctor-title {
+    font-size: 1.8rem;
+    padding-left: 1rem;
+  }
+  .doctor-content {
+    font-size: 1.4rem;
+    padding-left: 1rem;
+  }
+  .buttons {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 280px) {
+  .slider {
+    height: 38rem;
+  }
+}
