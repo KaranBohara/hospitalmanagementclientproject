@@ -79,7 +79,7 @@ function Carousel({slides})
           <div className="Cart" id="cart"><i class="fas fa-shopping-cart"></i></div>
            </Tippy>
             <Tippy placement="left" content="Feedback" >
-          <div className="feedback" id="feedback"><i class="fas fa-comment-dots"></i></div>
+          <div className="Feedback" id="Feedback"><i class="fas fa-comment-dots"></i></div>
           </Tippy>
       </div>
       </div>

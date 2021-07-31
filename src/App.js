@@ -12,8 +12,8 @@ function App() {
       <Header />
       <Carousel slides={Carouseldata} />
       <Doctorsinfo />
-      {/* <Ourfacilities/> */}
-      {/* <Footer/> */}
+      <Ourfacilities/>
+      <Footer/>
     </>
   );
 }

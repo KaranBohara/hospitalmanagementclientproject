@@ -150,6 +150,7 @@ section {
   display: flex;
   height: 12rem;
   width: 3.7rem;
+  z-index: 5000;
 }
 .sidetool {
   position: fixed;
@@ -175,7 +176,7 @@ section {
   height: 4rem;
   border-bottom: 0.2rem solid lightgray;
 }
-.sidetool .feedback {
+.sidetool .Feedback {
   display: flex;
   align-items: center;
   justify-content: center;

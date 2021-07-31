@@ -1,47 +1,51 @@
 [
     {
-        "src":"images/doctor1.png",
-        "Name":"Dr.Manish Bhatt",
+        "src":"images/401.png",
+        "Name":"Dr Manish Bhatt",
         "About":"MBBS, MD Physiotherapy ,Senior Consultant"
       },
       { 
-        "src":"images/doctor2.png",
-        "Name":"Dr.Ravina Jindal",
+        "src":"images/doctor2.jpg",
+        "Name":"Dr Ravina Jindal",
         "About":"MBBS, MD(Pediatric), DM (Neonatology),Senior Consultant "
       },
       {
         "src":"images/doctor3.png",
-        "Name":"Dr.Mahesh Srivastav",
+        "Name":"Dr Mahesh Srivastav",
         "About":"MBBS, MD (OBG),DGO,Senior Consultant Obstetrician "
       },
       {
-        "src":"images/doctor4.png",
-        "Name":"Dr.Anvita Chopra",
+        "src":"images/doctor4.jpg",
+        "Name":"Dr Anvita Chopra",
         "About":"MBBS, DGO, MD,Senior Consultant Obstetrician"
       },
       {
         "src":"images/doctor5.png",
-        "Name":"Dr.Binsha khan",
+        "Name":"Dr Binsha khan",
         "About":"MBBS, MD (Pshycology),Senior Consultant"
       },
 
       {
         "src":"images/doctor6.png",
-        "Name":"Dr.Junaida saifi",
-        "About":"MBBS,MD Gyneac Oncology & Robotic Surgery "
+        "Name":"Dr Junaida saifi",
+        "About":"MBBS,MD Gyneacology & Robotic Surgery "
       },
 
       {
         "src":"images/doctor7.png",
-        "Name":"Dr.Arjun Kumar",
+        "Name":"Dr Arjun Kumar",
         "About":"MBBS, DGO, MD Urology &  Robotic Surgery"
       },
 
       {
-        "src":"images/doctor8.png",
-        "Name":"Dr.Mayank Singh",
+        "src":"images/Doctor8.png",
+        "Name":"Dr Mayank Singh",
         "About":"MBBS, DGO, MD(OBG),Senior Consultant Gynaecologist"
+      }, 
+      {
+        "src":"images/402.png",
+        "Name":"Dr Robert Thomas",
+        "About":"MD, DGO,Senior Consultant Dermatologist"
       }
-
 
 ]
