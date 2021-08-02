@@ -5,6 +5,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 12rem;
 }
 .slider {
   position: relative;
@@ -216,7 +217,7 @@ section {
 }
 @media (max-width: 480px) and (min-width: 309px) {
   .slider {
-    height: 44rem;
+    height: 41rem;
   }
   .textsection {
     top: 39%;

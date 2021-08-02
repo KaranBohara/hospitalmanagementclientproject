@@ -1,0 +1,123 @@
+.sidetoolcontainer
+{
+    width:25%;
+    position: fixed;
+    left:2.5%;
+    top: 20%;
+    box-shadow: 0px 3px 8px black;
+    background-color: white;
+    height:auto;
+    z-index: 5002;
+    border-radius: 5px;
+}
+.loginbox,.signupbox
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.loginbox form,.signupbox form{
+   display: flex;
+   width: 100%;
+   flex-direction: column;
+   align-items: center;
+}
+.maintitle{
+    width: 100%;
+    justify-content: center;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin: 3rem 0rem 1rem 0rem;
+}
+.usernumber,.userpassword
+{
+    width: 80%;
+    height: 4rem;
+    display: flex;
+    margin-top: 3rem; 
+}
+.sidetoolcontainer input[type=tel],input[type=password]
+{
+    outline: none;   
+    padding-left: 1rem;
+    border: 2px solid grey;
+    border-radius: 6px;
+    width: 100%;
+    display: flex;
+}
+.loginbtn
+{
+    width: 100%;
+    height:4rem;
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0rem 3rem 0rem;
+}
+.sidetoolcontainer input[type=submit]
+{
+    box-shadow: 0px 2px 5px black;
+    width:18%;
+    height: 3.5rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.8rem;
+}
+.bottomcontent
+{
+width: 100%;
+display: flex;
+justify-content: center;
+margin: 1rem 0rem 2rem 0rem;
+font-size: 1.7rem;
+color: rgb(42, 89, 185);
+cursor: pointer;
+}
+@media (max-width: 1600px) {
+    .sidetoolcontainer
+{
+    width:30%;
+    left:3.5%;
+    top: 20%;
+}
+  }
+@media (max-width: 1200px) {
+    .sidetoolcontainer
+{
+    width:45%;
+    left:4.5%;
+    top: 20%;
+}
+  }
+  @media (max-width: 900px) {
+    .sidetoolcontainer
+{
+    width:60%;
+    left:10%;
+    top: 20%;
+}
+  }
+  @media (max-width: 650px) {
+    .sidetoolcontainer
+{
+    width:80%;
+    left:10%;
+    top: 20%;
+}
+  }
+  @media (max-width: 350px) {
+    .sidetoolcontainer
+{
+    width:80%;
+    left:13%;
+    top: 20%;
+}
+.sidetoolcontainer input[type=submit]
+{
+    width:25%;
+  }
+}

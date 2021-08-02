@@ -54,7 +54,7 @@
     display:flex;
     cursor: pointer;
     align-items: center; 
-    margin-top: 4rem;
+    margin-top: 1rem;
 
 }
  .firstblock img:hover
@@ -63,7 +63,7 @@
 } 
 .firstblock p
 {
-    margin-top: 1rem;
+    margin-top: .5rem;
     text-align: center;
     font-size: 1.6rem;
     font-weight: bold;

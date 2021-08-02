@@ -3,11 +3,13 @@ import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import './Carousel.css';
 import Carouseldata from './Carouseldata.jsx';
+import Login from './Login';
 
 
 function Carousel({slides})
 {
    const [currentslide,setCurrentslide]=useState(0);
+   const [loginclicked,setLoginclicked]=useState(false);
     const length=slides.length;
     const nextSlide = () => {
       setCurrentslide(currentslide === length - 1 ? 0 : currentslide + 1);
@@ -21,11 +23,17 @@ function Carousel({slides})
     {
       setCurrentslide(x);
     };
+    let logindisplay=()=>
+    {
+  
+      setLoginclicked(!loginclicked);
+      
+    };
     useEffect(() => {
       const interval = setInterval(() => {
         console.log(currentslide);
         setCurrentslide(currentslide+1);
-        if(currentslide==2)
+        if(currentslide===2)
         {
           setCurrentslide(0)
         }
@@ -38,7 +46,6 @@ function Carousel({slides})
     if (!Array.isArray(slides) || slides.length <= 0) {
       return null;
     }
-
     return(
     <section>
     <div className="slider">
@@ -73,7 +80,7 @@ function Carousel({slides})
             <div className="sidetoolrelative">
             <div className="sidetool">
           <Tippy placement="left" content="Login" >
-             <div className="login" id="login"><i class="fas fa-users"></i></div>
+             <div className="login" id="login"><i onClick={logindisplay} class="fas fa-users"></i></div>
           </Tippy>
           <Tippy placement="left" content="Pharmacy Cart" >
           <div className="Cart" id="cart"><i class="fas fa-shopping-cart"></i></div>
@@ -83,6 +90,12 @@ function Carousel({slides})
           </Tippy>
       </div>
       </div>
+      {loginclicked ?
+      <Login>
+      </Login>
+    :
+      <></>
+    }
       </div>
       </section>
     );

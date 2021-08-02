@@ -139,7 +139,6 @@ margin-top: -4%;
     position: relative;
     font-weight: lighter;
     font-size: 1.7rem;
-    justify-content: center;
     cursor: pointer;
     width:50%;
 }
@@ -147,8 +146,9 @@ margin-top: -4%;
 {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
     width: 50%;
+    justify-content: center;
+    align-items: center;
 }
 .news h6,.Blog h6{
 	font-size: 2rem;
@@ -163,14 +163,6 @@ margin-top: -4%;
 	color: white;
 	font-weight: bolder;
 }
-.Blog
-{
-    display: flex;
-    flex-direction: column;
-    margin-left: 80px;
-    width: 50%;
-}
-
 .copyright{
     width: 100%;
     color:#e7e7e7;
@@ -257,5 +249,15 @@ margin-top: -4%;
     .fa-facebook-f,.fa-twitter,.fa-instagram-square,.fa-youtube
     {
         font-size: 1.9rem;
+    }
+}
+@media screen and (max-width:336px)
+{
+    .Info-News{
+        width: 100%;
+    }
+    .Blog
+    {
+        text-align: center;
     }
 }

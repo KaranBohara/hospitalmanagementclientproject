@@ -1,6 +1,6 @@
 import React from 'react';
 import './maternity.css';
-import image1 from '../components/mat.jpg';
+import image1 from './images/mat.jpg';
 function Maternity()
 {
     return(<>
