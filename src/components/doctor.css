@@ -24,13 +24,13 @@
   {
     margin: 5rem 0rem 0rem 0rem;
     font-size: 2.5rem;
-     color: rgb(8, 50, 134);
+    color:rgb(2,71,91);   
   }
   .Our-Doctors h5
   {
     margin: 1rem 0rem 2rem 0rem;
     font-size: 2.5rem;
-     color: rgb(8, 50, 134);
+    color:rgb(2,71,91);   
   }
   .Our-Doctors h6{
     font-size: 1.5rem;
@@ -76,7 +76,7 @@
   {
     margin-top: 1rem;
     font-size: 1.8rem;
-    color: rgb(8, 50, 134);
+    color: rgb(2,71,91);  
   }
   .doctorabout
   {
@@ -89,6 +89,7 @@
     margin-top: 0rem;
     text-align: center;
     font-size: 1.6rem;
+    color: rgb(2,71,91);  
   }
   .doctor-button
   {
@@ -97,16 +98,16 @@
      outline: none;
      height: 40px;
      width: 180px;
-     border-radius: 20px;
+     border-radius: 5px;
      margin-bottom: 5%;
      color: white;
      border: none;
-     background-color:rgb(14, 57, 145)
+     background-color:rgb(255, 182, 13)
   }
   .doctor-button:hover
   {
     color: white;
-    background-color:rgb(4, 26, 71);
+    background-color:rgb(233, 163, 0);
     cursor: pointer;
   }
   .prev  ,.next 

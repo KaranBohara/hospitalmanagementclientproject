@@ -20,7 +20,7 @@
 .AboutFacilities h5
 {
     font-size: 2.5rem;
-    color: rgb(8, 50, 134);
+    color: rgb(2,71,91);  
 }
 .AboutFacilities p
 {
@@ -28,6 +28,7 @@
     opacity: .9;
     box-sizing: border-box;
     padding: .75% 15% 0% 15%;
+    color: rgb(2,71,91);  
 }
 .Facilities-Name
 {
@@ -38,6 +39,7 @@
     width: 100%;
     height: auto;
     flex-flow:  wrap;
+    color: rgb(2,71,91);  
 }
  .firstblock
 {
@@ -59,11 +61,11 @@
 }
  .firstblock img:hover
 {
-    transform: scale(1.2);
+    transform: scale(1.1);
 } 
 .firstblock p
 {
-    margin-top: .5rem;
+    margin-top: 1rem;
     text-align: center;
     font-size: 1.6rem;
     font-weight: bold;

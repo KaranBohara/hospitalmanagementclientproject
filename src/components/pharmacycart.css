@@ -1,0 +1,61 @@
+.backgroundCartBox
+{
+    width:100%;
+    margin: 12rem 0rem 0rem 0rem;
+    height:auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.cartbox{
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin:5rem 0rem 5rem 0rem;
+  justify-content: center;
+  align-items: center;
+}
+.noitems
+{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.noitemstext{
+  color: rgb(2,71,91);    
+  width:30rem;
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.noitems input[type=button]
+{
+  width:18rem;
+  border: none;
+  outline: none;
+  background-color: rgb(255, 182, 13);
+  border-radius: .7rem;
+  height: 4.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin-top: 1rem;
+}
+.noitems input[type=button]:hover
+{
+  background-color: rgb(255, 182, 13);
+}
+.cartbox img{
+    width: 80%;
+    height: 90%;
+    border-radius: .6rem 0rem 0rem .6rem;
+}
+@media (max-width:390px) {
+  .cartbox{
+  margin:8rem 0rem 5rem 0rem;
+}
+}

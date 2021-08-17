@@ -1,15 +1,11 @@
 import React,{useState,useEffect} from 'react';
-import Tippy from '@tippyjs/react';
-import 'tippy.js/dist/tippy.css';
 import './Carousel.css';
 import Carouseldata from './Carouseldata.jsx';
-import Login from './Login';
 
 
 function Carousel({slides})
 {
    const [currentslide,setCurrentslide]=useState(0);
-   const [loginclicked,setLoginclicked]=useState(false);
     const length=slides.length;
     const nextSlide = () => {
       setCurrentslide(currentslide === length - 1 ? 0 : currentslide + 1);
@@ -23,12 +19,7 @@ function Carousel({slides})
     {
       setCurrentslide(x);
     };
-    let logindisplay=()=>
-    {
-  
-      setLoginclicked(!loginclicked);
-      
-    };
+    
     useEffect(() => {
       const interval = setInterval(() => {
         console.log(currentslide);
@@ -77,25 +68,21 @@ function Carousel({slides})
               <div id="second" className={currentslide===1?'activeSlide':''} onClick={()=>indicateSlide(1)}></div>
               <div id="third" className={currentslide===2?'activeSlide':''} onClick={()=>indicateSlide(2)}></div>
             </div>
-            <div className="sidetoolrelative">
-            <div className="sidetool">
-          <Tippy placement="left" content="Login" >
-             <div className="login" id="login"><i onClick={logindisplay} class="fas fa-users"></i></div>
-          </Tippy>
-          <Tippy placement="left" content="Pharmacy Cart" >
-          <div className="Cart" id="cart"><i class="fas fa-shopping-cart"></i></div>
-           </Tippy>
-            <Tippy placement="left" content="Feedback" >
-          <div className="Feedback" id="Feedback"><i class="fas fa-comment-dots"></i></div>
-          </Tippy>
-      </div>
-      </div>
-      {loginclicked ?
+      {/* {loginclicked ?
       <Login>
       </Login>
     :
-      <></>
-    }
+    feedbackclicked ?
+      <Feedback>
+      </Feedback>
+    :
+    cartclicked ?
+    <Pharmacycart> 
+    </Pharmacycart>
+  :
+    <></>
+    } */}
+    
       </div>
       </section>
     );

@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react';
+import { NavLink } from 'react-router-dom';
 const Navlinks = () => {
     const [ferret1clicked,setFerret1clicked]=useState(true);
     const [ferret2clicked,setFerret2clicked]=useState(true);
@@ -23,35 +24,35 @@ useEffect(() => {
     return(
     <>
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#"><div className="listitem">Facilities</div> <i class="fas fa-caret-down" onClick={()=>showsubmenu1()}></i></a>
+        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="#">About Us</NavLink></li>
+        <li><NavLink to="#"><div className="listitem">Facilities</div> <i class="fas fa-caret-down" onClick={()=>showsubmenu1()}></i></NavLink>
             <ul style={((isMobile)&&(ferret1clicked))?{display:'none'}:{display:'block'}}>
                 <i className="fas fa-caret-up"></i>
-                <li><a href="#">Maternity</a></li>
-                <li><a href="#">Pediatric</a></li>
-                <li><a href="#">Physiotherapy</a></li>
-                <li><a href="#">Gynaecology</a></li>
-                <li><a href="#">Radiology</a></li>
-                <li><a href="#">Fertility</a></li>
-                <li><a href="#">Serogacy</a></li>
-                <li><a href="#">Cosmatology</a></li>
+                <li><NavLink to="/maternity">Maternity</NavLink></li>
+                <li><NavLink to="#">Pediatric</NavLink></li>
+                <li><NavLink to="#">Physiotherapy</NavLink></li>
+                <li><NavLink to="#">Gynaecology</NavLink></li>
+                <li><NavLink to="#">Radiology</NavLink></li>
+                <li><NavLink to="#">Fertility</NavLink></li>
+                <li><NavLink to="#">Serogacy</NavLink></li>
+                <li><NavLink to="#">Cosmatology</NavLink></li>
             </ul>
         </li>
-        <li><a href="#"><div className="listitem">Services</div><i class="fas fa-caret-down" 
-        onClick={()=>showsubmenu2()}></i></a>
+        <li><NavLink to="#"><div className="listitem">Services</div><i class="fas fa-caret-down" 
+        onClick={()=>showsubmenu2()}></i></NavLink>
 
             <ul style={((isMobile)&&(ferret2clicked))?{display:'none'}:{display:'block'}}>
                 <i className="fas fa-caret-up"></i>
-                <li><a href="#">Online Consultation</a></li>
-                <li><a href="#">Our Pharmacy</a></li>
-                <li><a href="#">Physiotherapy</a></li>
-                <li><a href="#">Nutrition consultation</a></li>
-                <li><a href="#">Meditation</a></li>
+                <li><NavLink to="#">Online Consultation</NavLink></li>
+                <li><NavLink to="#">Our Pharmacy</NavLink></li>
+                <li><NavLink to="#">Physiotherapy</NavLink></li>
+                <li><NavLink to="#">Nutrition consultation</NavLink></li>
+                <li><NavLink to="#">Meditation</NavLink></li>
             </ul>
         </li>
-        <li><a href="#">Appointment</a></li>
-        <li><a href="#">Locate Us</a></li>
+        <li><NavLink to="#">Appointment</NavLink></li>
+        <li><NavLink to="#">Locate Us</NavLink></li>
     </ul>
 </>
     );
