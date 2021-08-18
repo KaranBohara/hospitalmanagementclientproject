@@ -214,6 +214,14 @@ text-transform: uppercase;
    {
        width: 100%;
    }
+   .usericon
+{
+    width:12%;
+}
+.loginbox input[type=text],.loginbox input[type=password]
+{
+    width: 88%;
+}
   }
  @media (max-width:350px) {
     .userdata,.userpassword,.username,.cuserpassword,.otp,.resetpassword,.cresetpassword
