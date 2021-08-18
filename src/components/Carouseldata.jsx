@@ -3,7 +3,7 @@ const Carouseldata=[
         imgsrc:"images/d4.png",
         title:"Making Health Care Stronger",
         content:"Shop here at discounted price",
-        buttoncontentfirst:"Shop Now",
+        buttoncontentfirst:"Buy Medicines",
         buttoncontentsecond:"Our Pharmacy"
 
     },

@@ -1,11 +1,11 @@
 [
     {
-        "src":"images/401.png",
+        "src":"images/404.png",
         "Name":"Dr Manish Bhatt",
         "About":"MBBS, MD Physiotherapy ,Senior Consultant"
       },
       { 
-        "src":"images/doctor2.jpg",
+        "src":"./images/doctor2.png",
         "Name":"Dr Ravina Jindal",
         "About":"MBBS, MD(Pediatric), DM (Neonatology),Senior Consultant "
       },
@@ -15,12 +15,7 @@
         "About":"MBBS, MD (OBG),DGO,Senior Consultant Obstetrician "
       },
       {
-        "src":"images/doctor4.jpg",
-        "Name":"Dr Anvita Chopra",
-        "About":"MBBS, DGO, MD,Senior Consultant Obstetrician"
-      },
-      {
-        "src":"images/doctor5.png",
+        "src":"images/401.png",
         "Name":"Dr Binsha khan",
         "About":"MBBS, MD (Pshycology),Senior Consultant"
       },

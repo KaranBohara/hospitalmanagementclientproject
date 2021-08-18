@@ -44,7 +44,7 @@
 {
    
     height: 4.8rem;
-    width: 20rem;
+    width: 21rem;
     margin: auto;
     border-radius: .8rem;
     border: none;
@@ -54,13 +54,13 @@
     font-size: 1.9rem;
     font-weight: bold;
     text-transform: uppercase;
-    background-color:rgb(255, 182, 13);
+    background-color:rgb(15,99,157);
 
 }
 .doctor button:hover ,.YogaProgram button:hover ,.Ask1 button:hover
   {
     color: white;
-    background-color:rgb(233, 163, 0);
+    background-color:rgb(0, 65, 112);
     cursor: pointer;
   }
 
@@ -69,7 +69,9 @@
     display: flex;
     flex-direction: column;
     height: auto;
-    background: url("./images/pyoga.png")
+    background: url("./images/pyoga.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .YogaProgram p
 {
@@ -93,7 +95,7 @@
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
-    background-color:rgb(255, 182, 13);
+    background-color:rgb(15,99,157);
     text-transform: uppercase;
     margin-bottom: 16%;
 }
@@ -174,6 +176,7 @@
 .Doc img
 {
     width:60%;
+    height:70%;
     margin-top:2rem;
 }
 
@@ -189,7 +192,7 @@
 } 
 .Doc p
 {
-    font-size:1.1rem;
+    font-size:1.3rem;
     text-align:center;
     opacity:.8;
     margin-bottom:3rem;
@@ -261,10 +264,10 @@
     color: white;
     outline: none;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     margin-top: 2rem;
-    background-color:rgb(255, 182, 13);
+    background-color:rgb(15,99,157);
     margin-bottom: 2rem;
     text-transform: uppercase;
 
@@ -283,9 +286,17 @@
         display: flex;
         flex-direction:column;
     }
+    .doctor
+    {   
+      margin:3rem 0rem 5rem 0rem;
+    }
     .Doc
     {
         width: 100%;
     }
+    .maternityFeedback textarea
+    {
+       width:90%;
+    }
        
-        }
+}

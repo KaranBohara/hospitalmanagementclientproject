@@ -10,14 +10,18 @@ export default class Doctorsinfo extends React.Component{
            <h6> Together, we bring loads of experience and expertise to the table to offer only exceptional service for you and your baby</h6>
           </div>
     <div className="Doctors">
+      <div className="doctorsItem">
       {Doctordata.map((item,index)=>(
             <div className="card" key={index}>
             <div className="doctorimage"><img src={item.src}/></div>
+            <div className="infoBlock">
             <div className="doctorname">{item.Name}</div>
                 <div className="doctorabout">{item.About}</div>
                 <button className="doctor-button">Book Appointment</button>
             </div>
+            </div>
              ))}
+             </div>
     </div>
    </>
  );

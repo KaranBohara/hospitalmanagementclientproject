@@ -1,15 +1,14 @@
 import React from 'react';
 import './maternity.css';
 import image16 from './images/mat.jpg'
-import image17 from './images/doc.jpg'
-import image18 from './images/doc2.jpg'
-import image19 from './images/doctor.jpg'
+import image17 from './images/doctor1.png'
+import image18 from './images/doctor2.png'
+import image19 from './images/d4.png'
 import image20 from './images/doctor4.png'
 
 function Maternity()
 {
     return(<>
-
       <div className="matimage">
          <div>  <img src={image16}/></div>
           <div className="text"><h2>Maternity</h2>
